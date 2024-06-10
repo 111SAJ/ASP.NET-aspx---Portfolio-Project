@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SampleWebsite.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css?Version=1" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="Pic/Nomaan_Ahmad_Siddiqui.png" alt="Logo"></div>
+            <li><a href="Index.aspx">Home</a></li>
+            <li><a href="#AboutMe">About</a></li>
+            <li><a href="#MyResume">Resume</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="Login.aspx">Login</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="Enter your text here....">
+            <button class="btn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+<div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+<div class="ln"></div>
+<section class="footer"> 
+    <div class="foot-box-main">
+        <div class="foot-content">
+            <div class="foot-pages">
+                <h3>Pages</h3>
+                <a href="Index.aspx">Home</a>
+                <a href="#AboutMe">About</a>
+                <a href="#MyResume">My Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <div class="foot-contact-me">
+                <h3>Contact Me</h3>
+                <div class="foot-contact-me-row">
+                    <img src="Pic/Phone-light.png"><p>+91 790 561 4885</p>
+                </div>
+                <div class="foot-contact-me-row">
+                    <img src="Pic/Email-light.png"><p>nomaanahmadsiddiqui@gmail.com</p>
+                </div>
+                <div class="foot-contact-me-row">
+                    <img src="Pic/Website-light.png"><p>www.nomaanahmadsiddiqui.com</p>
+                </div>
+                <div class="foot-contact-me-row">
+                    <img src="Pic/Address-light.png"><p>126/23, Aqsa Manzil 2nd floor Lalbagh, Opp Islamia college, 226001 lucknow</p>
+                </div>
+            </div>
+            <div class="foot-social">
+                <h3>Social Connect</h3>
+                <div class="foot-social-icons">
+                    <a href="https://in.linkedin.com/in/nomaan-ahmad-siddiqui-9b995a177" target="_blank"><img src="Pic/linkedin-light.png"></a>
+                    <a href="https://instagram.com/nomaan7siddiqui?igshid=MzRlODBiNWFlZA==|" target="_blank"><img src="Pic/instagram-light.png"></a>
+                    <a href="https://wa.me/7905614885" target="_blank"><img src="Pic/whatsapp-light.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100005811134757" target="_blank"><img src="Pic/facebook-light.png"></a>
+                    <%--<img src="Pic/linkedin-light.png">
+                    <img src="Pic/instagram-light.png">
+                    <img src="Pic/whatsapp-light.png">
+                    <img src="Pic/facebook-light.png">--%>
+                </div>
+            </div>
+            <div class="foot-login">
+                <h3>Account Login</h3>
+                <div class="foot-login-area">
+                    <img src="Pic/Login-light.png" onclick="window.location.href='Login.aspx'"><a href="Login.aspx">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot-developer">
+            <a href="Sayed Asad Jamal.aspx">
+                <p>Developed by Sayed Asad Jamal | 2023</p>
+            </a>
+        </div>
+    </div>
+</section>
+    <script src="JavaScript.js"></script>
+    </form>
+</body>
+</html>
